@@ -13,6 +13,7 @@ export default function App() {
             <ScrollView
                 pagingEnabled
                 horizontal
+                showsHorizontalScrollIndicator={false}
                 contentContainerStyle={styles.weather}
             >
                 <View style={styles.day}>
