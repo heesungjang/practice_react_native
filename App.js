@@ -67,7 +67,7 @@ export default function App() {
                 contentContainerStyle={styles.weather}
             >
                 {days.length === 0 ? (
-                    <View style={styles.day}>
+                    <View style={{ ...styles.day, alignItems: "center" }}>
                         <ActivityIndicator
                             color="white"
                             size="large"
