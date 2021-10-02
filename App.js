@@ -72,6 +72,9 @@ export default function App() {
                             <Text style={styles.description}>
                                 {day.weather[0].main}
                             </Text>
+                            <Text style={styles.subInfo}>
+                                {day.weather[0].description}
+                            </Text>
                         </View>
                     ))
                 )}
@@ -109,5 +112,8 @@ const styles = StyleSheet.create({
     description: {
         marginTop: -30,
         fontSize: 60,
+    },
+    subInfo: {
+        fontSize: 20,
     },
 });
